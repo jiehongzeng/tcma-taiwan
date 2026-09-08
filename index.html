@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>臺灣復興中華傳統武術協會</title>
+  <style>
+    :root{
+      --navy:#10243f;
+      --navy-2:#17385e;
+      --gold:#c9a96a;
+      --ivory:#f7f2e7;
+      --ink:#1c2430;
+      --muted:#6b7280;
+      --white:#ffffff;
+      --line:#ded7c9;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+      color:var(--ink);
+      background:var(--ivory);
+      line-height:1.7;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(16,36,63,.96);
+      color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(8px);
+    }
+    .nav{
+      min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px
+    }
+    .brand{
+      display:flex;align-items:center;gap:14px;font-weight:700
+    }
+    .logo{
+      width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;
+      display:grid;place-items:center;color:var(--gold);font-family:serif;font-size:22px
+    }
+    .brand small{display:block;font-weight:400;opacity:.72;font-size:11px;letter-spacing:.4px}
+    nav{display:flex;gap:22px;font-size:14px}
+    nav a{opacity:.88}
+    nav a:hover{color:var(--gold);opacity:1}
+
+    .hero{
+      background:
+        linear-gradient(rgba(16,36,63,.86),rgba(16,36,63,.92)),
+        radial-gradient(circle at 75% 30%, rgba(201,169,106,.22), transparent 34%);
+      color:#fff;
+      padding:110px 0 92px;
+    }
+    .hero-inner{max-width:820px}
+    .eyebrow{color:var(--gold);letter-spacing:4px;font-size:14px;font-weight:700;margin-bottom:14px}
+    h1{font-family:serif;font-size:clamp(38px,6vw,72px);line-height:1.15;margin:0 0 18px}
+    .en{font-size:14px;letter-spacing:.7px;opacity:.75;margin-bottom:26px}
+    .slogan{
+      display:inline-block;border-left:3px solid var(--gold);padding-left:16px;
+      font-size:clamp(22px,3vw,32px);font-weight:700;margin:12px 0 18px
+    }
+    .lead{max-width:720px;font-size:18px;opacity:.9}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      padding:12px 20px;border-radius:4px;border:1px solid var(--gold);
+      font-weight:700;display:inline-block
+    }
+    .btn-primary{background:var(--gold);color:var(--navy)}
+    .btn-outline{color:#fff}
+    .btn:hover{transform:translateY(-1px)}
+
+    section{padding:74px 0}
+    .section-title{font-family:serif;font-size:36px;margin:0 0 12px;color:var(--navy)}
+    .section-sub{color:var(--muted);max-width:760px;margin-bottom:34px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{
+      background:#fff;border:1px solid var(--line);padding:26px;border-radius:10px;
+      box-shadow:0 8px 20px rgba(16,36,63,.05)
+    }
+    .card h3{margin-top:0;color:var(--navy);font-size:21px}
+    .icon{font-size:26px;margin-bottom:8px}
+    .alt{background:#fff}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+    .quote-box{
+      background:var(--navy);color:#fff;padding:34px;border-radius:12px;
+      border-left:6px solid var(--gold)
+    }
+    .quote-box strong{color:var(--gold);font-size:24px}
+    .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:13px}
+    .cta{
+      background:var(--navy-2);color:#fff;text-align:center
+    }
+    .cta h2{font-family:serif;font-size:38px;margin:0 0 10px}
+    footer{background:#0b1a2e;color:#cfd8e3;padding:36px 0;font-size:14px}
+    footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .gold{color:var(--gold)}
+    @media(max-width:850px){
+      nav{display:none}
+      .grid3,.split{grid-template-columns:1fr}
+      .hero{padding-top:82px}
+      .brand span{font-size:14px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">武</div>
+      <span>臺灣復興中華傳統武術協會
+        <small>Traditional Chinese Martial Arts Revival Association of Taiwan</small>
+      </span>
+    </div>
+    <nav>
+      <a href="#about">關於協會</a>
+      <a href="#committee">技術委員會</a>
+      <a href="#activities">活動與課程</a>
+      <a href="#join">加入我們</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="eyebrow">傳統武術・文化傳承・武德教育</div>
+    <h1>臺灣復興中華傳統武術協會</h1>
+    <div class="en">Traditional Chinese Martial Arts Revival Association of Taiwan</div>
+    <div class="slogan">復興傳統・術德兼修</div>
+    <p class="lead">以傳統武術為核心，推動技藝傳承、文化保存、人才培育、武德教育與公益推廣，讓武術不只被保留下來，更能持續被學習、實踐與傳承。</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#about">認識協會</a>
+      <a class="btn btn-outline" href="#join">加入會員</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">關於協會</h2>
+    <p class="section-sub">我們致力於保存中華傳統武術的技藝、文化與精神，並透過制度化教學、人才培育及公益活動，讓傳統武術在現代社會持續發展。</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="icon">傳</div>
+        <h3>技藝傳承</h3>
+        <p>建立系統化的拳術、兵器、基本功與武德教育內容，留下可持續教學與傳承的基礎。</p>
+      </div>
+      <div class="card">
+        <div class="icon">育</div>
+        <h3>人才培育</h3>
+        <p>培養青少年學員、助教、儲備教練與專項講師，形成長期的人才傳承梯隊。</p>
+      </div>
+      <div class="card">
+        <div class="icon">弘</div>
+        <h3>文化推廣</h3>
+        <p>透過講座、體驗、展演、人物紀錄與公益活動，讓更多民眾認識傳統武術的文化價值。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="committee" class="alt">
+  <div class="container split">
+    <div>
+      <h2 class="section-title">技術委員會</h2>
+      <p class="section-sub">技術委員會負責協會武術技術體系、教學標準、傳承培訓、師資發展與文化保存等工作。</p>
+      <div class="tags">
+        <span class="tag">基本功</span>
+        <span class="tag">拳術</span>
+        <span class="tag">兵器</span>
+        <span class="tag">武德教育</span>
+        <span class="tag">助教培育</span>
+        <span class="tag">傳承紀錄</span>
+      </div>
+    </div>
+    <div class="quote-box">
+      <strong>術以立身，德以立心。</strong>
+      <p>不只學會一套拳、一件兵器，更重視基本功、精神、禮儀、自律、安全與傳承責任。</p>
+    </div>
+  </div>
+</section>
+
+<section id="activities">
+  <div class="container">
+    <h2 class="section-title">活動與課程</h2>
+    <p class="section-sub">第一版網站可先放固定活動與年度規劃，之後再逐步加入最新消息與線上報名。</p>
+    <div class="grid3">
+      <div class="card">
+        <h3>會員習武日</h3>
+        <p>以季節為主題安排基本功、身法、腿功、兵器、站樁與修功架等共同練習。</p>
+      </div>
+      <div class="card">
+        <h3>青少年培訓</h3>
+        <p>以小班制方式培養學員基本功、套路、兵器、武德與助教能力。</p>
+      </div>
+      <div class="card">
+        <h3>講座與公益體驗</h3>
+        <p>邀請武術前輩、教練與專家進行傳統武術文化講座、公益教學與推廣活動。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="cta">
+  <div class="container">
+    <h2>一起加入傳承的行列</h2>
+    <p>個人會員・學生會員・團體會員</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn btn-primary" href="#" onclick="alert('之後可把這裡換成 Google 表單網址');return false;">加入會員</a>
+      <a class="btn btn-outline" href="#contact">聯絡協會</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">聯絡我們</h2>
+    <p class="section-sub">這一區之後可放協會 Email、Facebook、LINE 官方帳號、Google 表單或活動報名連結。</p>
+    <div class="card">
+      <p><strong>協會名稱：</strong>臺灣復興中華傳統武術協會</p>
+      <p><strong>英文名稱：</strong>Traditional Chinese Martial Arts Revival Association of Taiwan</p>
+      <p><strong>核心理念：</strong><span class="gold">復興傳統・術德兼修</span></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <div>© 2026 臺灣復興中華傳統武術協會</div>
+    <div>復興傳統・術德兼修</div>
+  </div>
+</footer>
+</body>
+</html>
