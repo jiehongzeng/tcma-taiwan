@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="index,follow" name="robots"/>
 <title>臺灣復興中華傳統武術協會｜復興傳統・術德兼修</title>
 <style>
 :root{
@@ -159,7 +160,7 @@ section{padding:88px 0}
   min-height:420px;position:relative;
   background:
     linear-gradient(rgba(246,239,223,.34),rgba(246,239,223,.34)),
-    url("foundation-still-life.jpg") center/cover;
+    url("images/foundation-still-life.jpg") center/cover;
   overflow:hidden;border:1px solid var(--line)
 }
 .origin-art:after{
@@ -317,224 +318,384 @@ footer b{color:white}.footer-motto{font:700 25px "LiSu","隸書","KaiTi",serif;c
 .action-item{padding:20px 16px;text-align:center;border:1px solid var(--line);background:rgba(246,239,223,.45);font-weight:700;letter-spacing:.08em;color:var(--navy)}
 @media(max-width:720px){.action-grid{grid-template-columns:repeat(2,1fr)}}
 
+
+/* Responsive navigation and official registration */
+.mobile-toggle{display:none;border:1px solid var(--line);border-radius:7px;background:var(--paper-2);color:var(--navy);font-size:18px;padding:8px 13px;cursor:pointer}
+.registration{padding:72px 0;background:var(--paper-2)}
+.registration-panel{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:start;border:1px solid var(--line);background:#fffaf0;padding:clamp(18px,4vw,36px);max-width:850px;margin:auto}
+.registration h2{font-size:clamp(27px,4vw,40px);color:var(--navy);margin:5px 0 15px}
+.registration dl{display:grid;grid-template-columns:120px minmax(0,1fr);gap:9px 15px;margin:20px 0}
+.registration dt{font-weight:700;color:var(--navy)}.registration dd{margin:0;overflow-wrap:anywhere}
+.registration .certificate{display:block;width:100%;max-height:480px;object-fit:contain;border:1px solid var(--line);background:white}
+.registration .button{display:inline-block;margin-top:10px;padding:9px 18px}
+@media(max-width:900px){
+ .mobile-toggle{display:block;margin-left:auto}
+ header .nav{position:relative;flex-wrap:wrap}
+ header nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:30;background:var(--paper-2);border:1px solid var(--line);box-shadow:0 12px 24px #10273d22;padding:8px 15px;flex-direction:column;gap:0}
+ header nav.is-open{display:flex}
+ header nav a{padding:11px 8px;border-bottom:1px solid var(--line)}
+ header nav a:last-child{border-bottom:0}
+ .registration-panel{grid-template-columns:1fr}
+}
+@media(max-width:560px){.registration dl{grid-template-columns:1fr;gap:2px}.registration dd{margin-bottom:10px}.registration{padding:48px 0}.registration .certificate{max-height:none}}
+
+/* V17 official emblem and responsive polish */
+.brand{gap:13px;min-width:0}.brand-logo{width:60px;height:60px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 3px rgba(16,39,61,.12))}.brand>div{min-width:0}
+.hero-logo{position:relative;z-index:2;width:min(100%,350px);height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(73,48,20,.16))}
+.hero-mark{isolation:isolate}.hero-mark .seal{right:7%;bottom:14px}.hero-inner{gap:34px}.hero-copy{min-width:0}
+@media(max-width:1100px){.nav{gap:16px}header nav{gap:13px;font-size:13px}.brand-name{font-size:19px}.brand-logo{width:52px;height:52px}}
+@media(max-width:900px){.hero{min-height:0}.hero-inner{padding:64px 0 108px;gap:4px}.hero-mark{min-height:300px}.hero-logo{width:min(300px,76vw)}.hero-mark .seal{right:19%;bottom:12px}.brand-logo{width:48px;height:48px}}
+@media(max-width:560px){.wrap{width:92%}.nav{gap:8px;min-height:72px}.brand{gap:8px;flex:1}.brand-logo{width:43px;height:43px}.brand-name{font-size:clamp(13px,3.7vw,17px);letter-spacing:0;line-height:1.4}.hero-inner{padding:48px 0 88px}.hero h1{font-size:55px}.hero .main-motto{font-size:clamp(23px,6vw,29px);letter-spacing:.1em}.hero .desc{font-size:16px}.hero-mark{min-height:260px}.hero-logo{width:min(260px,74vw)}.hero-mark .seal{right:5%;bottom:8px}.section-title h2{font-size:clamp(28px,8vw,36px)}section{padding:58px 0}.origin{gap:24px}.origin-copy h3{font-size:27px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* V18: public programs / responsive editorial cards */
+.initiatives{padding:100px 0;background:#faf5e9;border-top:1px solid #e5d7bb;border-bottom:1px solid #e5d7bb}.initiatives-head{text-align:center;max-width:800px;margin:0 auto 48px}.initiatives-kicker{color:#ae8241;font-size:12px;letter-spacing:.22em;font-weight:700}.initiatives-head h2{font-size:clamp(32px,4vw,50px);color:#183653;line-height:1.35;margin:15px 0}.initiatives-head p{color:#5f6668;font-size:16px}.initiatives-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.initiative{background:#fffdf8;border:1px solid #e6dac4;overflow:hidden;box-shadow:0 12px 35px rgba(38,42,43,.045)}.initiative-feature{grid-column:1/-1;display:grid;grid-template-columns:1.05fr .95fr}.initiative-photo{height:220px;overflow:hidden;background:#e6decf}.initiative-feature .initiative-photo{height:100%;min-height:330px}.initiative-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.initiative:hover .initiative-photo img{transform:scale(1.035)}.initiative-copy{padding:26px 30px 30px}.initiative-feature .initiative-copy{padding:45px 42px}.initiative-num{font-size:11px;color:#a17b43;letter-spacing:.16em;font-weight:700}.initiative h3{font-family:'LiSu','DFKai-SB','BiauKai',serif;font-size:clamp(24px,2.5vw,32px);color:#183653;margin:10px 0 12px;line-height:1.4}.initiative p{font-size:15px;line-height:1.95;color:#565f62;margin:0 0 16px}.initiative-tag{display:inline-block;border-top:1px solid #c8ab75;padding-top:8px;color:#84673d;font-size:12px;letter-spacing:.08em}.initiatives-cta{margin-top:28px;background:#183653;color:#fffaf0;padding:27px 32px;display:flex;justify-content:space-between;align-items:center;gap:24px}.initiatives-cta strong{font-size:17px}.initiatives-cta p{margin:4px 0 0;color:#e4d8bf;font-size:14px}.initiatives-cta a{flex-shrink:0;border:1px solid #d2b57b;padding:10px 25px;color:#fff3d5}.initiatives-cta a:hover{background:#d2b57b;color:#183653}@media(max-width:760px){.initiatives{padding:65px 0}.initiatives-head{margin-bottom:30px}.initiatives-grid{grid-template-columns:1fr;gap:18px}.initiative-feature{grid-column:auto;display:block}.initiative-feature .initiative-photo{height:235px;min-height:0}.initiative-photo{height:205px}.initiative-copy,.initiative-feature .initiative-copy{padding:23px 22px 25px}.initiatives-cta{display:block;padding:24px}.initiatives-cta a{display:inline-block;margin-top:18px}}
+
+/* V23 cultural introduction: formal emblem on the left, welcoming story on the right */
+.hero{min-height:610px}
+.hero-inner{grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,75px);padding:82px 0 104px}
+.hero-mark{grid-column:1;grid-row:1;min-height:410px}
+.hero-copy.v23-copy{grid-column:2;grid-row:1;max-width:610px}
+.hero-logo{width:min(100%,390px)}
+.hero-mark .seal{right:1%;bottom:20px}
+.hero .v23-head{font-size:clamp(32px,3.2vw,48px);line-height:1.4;letter-spacing:.08em;margin:15px 0 20px;color:var(--navy)}
+.v23-head span{color:var(--gold)}
+.v23-rule{height:2px;width:68px;background:var(--gold);margin-bottom:25px}
+.v23-lead{font-size:19px;line-height:1.95;color:#37434a;margin:0 0 15px;font-weight:600}
+.v23-detail{font-size:16px;line-height:2.05;color:#5b605e;margin:0 0 18px}
+.v23-tagline{font-size:16px;color:#956d36;font-weight:700;letter-spacing:.045em;margin:0 0 22px}
+.v23-cta{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--gold);padding:9px 18px;color:var(--navy);font-size:14px;background:rgba(255,255,255,.55);transition:background .2s}
+.v23-cta:hover{background:#fff8e9}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;padding:42px 0 80px;gap:12px}.hero-mark{grid-column:1;grid-row:1;min-height:300px}.hero-copy.v23-copy{grid-column:1;grid-row:2;max-width:700px;margin:auto;text-align:center}.hero-logo{width:min(300px,72vw)}.hero-mark .seal{right:14%;bottom:5px}.v23-rule{margin:0 auto 22px}.hero .v23-head{font-size:clamp(28px,6vw,42px)}.v23-lead{font-size:17px}.v23-detail{font-size:15px}}
+@media(max-width:560px){.hero-mark{min-height:260px}.hero-logo{width:min(260px,72vw)}.hero-mark .seal{right:5%;bottom:4px}.hero .v23-head{font-size:29px;letter-spacing:.02em}.v23-lead{font-size:16px}.v23-detail{font-size:15px}.v23-tagline{font-size:15px}}
+
+</style>
+<style id="home-shortcut-style">
+.home-shortcut{position:fixed;right:18px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:9999;display:flex;align-items:center;gap:7px;padding:10px 16px;background:#183653;color:#fff!important;border:1px solid #c49a52;border-radius:30px;box-shadow:0 5px 18px #10273d45;font-size:15px;font-weight:700;text-decoration:none;line-height:1.5}
+.home-shortcut:hover,.home-shortcut:focus-visible{background:#8d3b30;color:#fff!important}
+@media(min-width:881px){.home-shortcut{right:25px;bottom:24px}}
+</style>
+<style id="v16-style">
+html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.feature-art img{height:100%;object-fit:cover}
+.v16-section{padding:70px 0;background:#fbf7ee}.v16-alt{background:#f0e5ce}.v16-section h2{font-size:clamp(28px,4vw,40px);color:#183653;margin:4px 0 12px}.v16-lead{max-width:780px;color:#575c60;margin:0 0 25px}.v16-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.v16-card{padding:25px;background:#fffaf0;border:1px solid #d9c9a8;min-width:0}.v16-card span{color:#996e32;font-size:12px;letter-spacing:.12em}.v16-card h3{color:#183653;margin:8px 0;font-size:21px}.v16-card p{margin:0 0 12px}.v16-card a,.v16-note a{color:#8d3b30;text-decoration:underline;text-underline-offset:3px}.v16-note{margin-top:20px}
+@media(max-width:900px){.v16-cards{grid-template-columns:1fr}header nav.is-open{display:flex!important}header nav{max-height:calc(100dvh - 75px);overflow-y:auto}header nav a{font-size:16px}}@media(max-width:560px){.v16-section{padding:46px 0}.v16-card{padding:19px}.nav{min-height:68px}.brand-name{font-size:16px}.mobile-toggle{white-space:nowrap}}
+</style>
+<style id="v17-photo-gallery-style">
+.practice-photos{padding:82px 0;background:#f8f2e5;color:#183653}
+.practice-photos .eyebrow{font-size:12px;letter-spacing:.22em;color:#9c783c;margin-bottom:10px}
+.practice-photos h2{font-size:clamp(30px,4vw,45px);margin:0 0 12px;color:#183653}
+.practice-photos .intro{max-width:740px;margin:0 0 28px;color:#59616a;line-height:1.9}
+.practice-photo-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.practice-photo-grid figure{grid-column:span 4;margin:0;position:relative;overflow:hidden;min-height:290px;background:#e0d7c6;border:1px solid #d8c9ad}
+.practice-photo-grid figure.featured{grid-column:span 8;min-height:430px}
+.practice-photo-grid figure img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 45%;transition:transform .35s ease}
+.practice-photo-grid figure:hover img{transform:scale(1.025)}
+.practice-photo-grid figure:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(13,32,48,.79))}
+.practice-photo-grid figcaption{position:absolute;z-index:1;bottom:0;left:0;right:0;padding:35px 18px 16px;color:#fff;font-size:14px;letter-spacing:.08em}
+.practice-photo-grid figcaption strong{display:block;font-size:21px;margin-bottom:4px}
+.practice-photo-grid figure:nth-child(2) img{object-position:center 43%}
+@media(max-width:850px){.practice-photo-grid figure,.practice-photo-grid figure.featured{grid-column:span 6;min-height:330px}}
+@media(max-width:560px){.practice-photos{padding:55px 0}.practice-photo-grid{gap:10px}.practice-photo-grid figure.featured{grid-column:span 12;min-height:300px}.practice-photo-grid figure{grid-column:span 6;min-height:240px}.practice-photo-grid figcaption{padding:26px 10px 10px;font-size:12px}.practice-photo-grid figcaption strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.practice-photo-grid figure img{transition:none}}
+</style>
+<style>
+/* V19: authentic program descriptions, no misleading photo associations */
+.initiatives-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.initiatives-grid .v19-initiative{display:flex;flex-direction:column;min-width:0;background:#fffcf5;border:1px solid #decba8;box-shadow:0 5px 20px rgba(20,40,55,.045)}
+.v19-symbol{height:115px;background:linear-gradient(120deg,#e9ddc5,#f7efdd);display:flex;align-items:center;justify-content:center;border-bottom:1px solid #decba8}
+.v19-symbol span{font-family:serif;font-size:57px;color:#8b7149;line-height:1}
+.v19-initiative .initiative-copy{padding:24px;flex:1}
+.v19-initiative .initiative-copy h3{font-size:22px;line-height:1.5}
+.v19-initiative .initiative-copy p{font-size:15px;line-height:1.9}
+@media(max-width:850px){.initiatives-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.initiatives-grid{grid-template-columns:1fr;gap:14px}.v19-symbol{height:82px}.v19-symbol span{font-size:42px}.v19-initiative .initiative-copy{padding:20px}}
+</style><style>
+/* V20 · ink-wash + vermilion seals; five real program names lead */
+.v20-initiatives{background:radial-gradient(ellipse at 15% 8%,rgba(199,175,127,.14),transparent 38%),radial-gradient(ellipse at 88% 92%,rgba(52,73,77,.065),transparent 38%),#faf6ec;padding:90px 0 96px}
+.v20-initiatives .initiatives-head{margin-bottom:18px}.v20-initiatives .initiatives-head h2{font-size:clamp(30px,3.5vw,46px)}
+.v20-ornament{height:26px;margin:0 auto 30px;max-width:420px;display:flex;align-items:center;gap:18px;color:#b08a54;justify-content:center}.v20-ornament:before,.v20-ornament:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#c5a675)}.v20-ornament:after{transform:scaleX(-1)}
+.v20-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.v20-grid .v20-card{position:relative;display:flex;flex-direction:column;background:#fffdf8;border:1px solid #d5bb8d;box-shadow:0 9px 25px rgba(48,46,40,.065);overflow:hidden;min-height:325px;transition:transform .2s,box-shadow .2s}
+.v20-grid .v20-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(48,46,40,.11)}
+.v20-card:before,.v20-card:after{content:"";position:absolute;width:21px;height:21px;border-color:#b89254;border-style:solid;pointer-events:none;z-index:2}.v20-card:before{left:8px;top:8px;border-width:1px 0 0 1px}.v20-card:after{right:8px;bottom:8px;border-width:0 1px 1px 0}
+.v20-card-top{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 22px 0;position:relative;z-index:1}
+.v20-index{font-size:10px;letter-spacing:.14em;color:#94754c;font-weight:700;padding-top:9px}
+.v20-seal{background:#a44436;color:#fff9ed;font-family:'DFKai-SB','BiauKai',serif;font-size:19px;letter-spacing:.08em;line-height:1.2;width:53px;height:59px;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;border:3px double #f4d7b5;outline:1px solid #a44436;box-shadow:1px 2px 0 rgba(115,46,37,.12);transform:rotate(2deg)}
+.v20-art{height:54px;position:relative;overflow:hidden;margin:0 20px;opacity:.75}.v20-art-symbol{position:absolute;right:78px;top:3px;color:#b69a6c;font-size:29px;opacity:.55}.v20-ink-hill{position:absolute;left:0;right:0;bottom:-35px;height:65px;background:radial-gradient(ellipse at 10% 100%,#a7aca3 0 25%,transparent 26%),radial-gradient(ellipse at 37% 100%,#c0b9a8 0 33%,transparent 34%),radial-gradient(ellipse at 73% 100%,#b2b4a8 0 29%,transparent 30%);opacity:.32}
+.v20-card-body{position:relative;padding:6px 26px 27px;display:flex;flex-direction:column;flex:1}
+.v20-card-body h3{font-family:'LiSu','DFKai-SB','BiauKai',serif;font-size:clamp(29px,2.7vw,36px);line-height:1.3;color:#183653;margin:0 0 5px;letter-spacing:.055em}
+.v20-subtitle{color:#a27b42;font-size:13px;font-weight:700;letter-spacing:.07em;border-bottom:1px solid #e6d8bd;padding-bottom:13px;margin-bottom:13px}
+.v20-card-body p{font-size:14px;line-height:1.9;color:#535e60;margin:0 0 17px;flex:1}
+.v20-card-body .initiative-tag{font-size:11px;align-self:flex-start}
+@media(max-width:900px){.v20-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.v20-initiatives{padding:62px 0}.v20-grid{grid-template-columns:1fr;gap:16px}.v20-grid .v20-card{min-height:0}.v20-card-top{padding:17px 20px 0}.v20-card-body{padding:5px 22px 23px}.v20-card-body h3{font-size:30px}.v20-art{height:39px}.v20-ornament{margin-bottom:23px}}
+</style><style id="v21-gallery-style">
+.v21-practice{background:#f8f2e6;padding:76px 0 82px}
+.v21-main-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v21-photo{position:relative;margin:0;aspect-ratio:1.25;overflow:hidden;background:#d8cbb3;border:1px solid #d5c3a1}
+.v21-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;transition:transform .35s ease}
+.v21-photo.v21-fist img{object-position:center 44%}
+.v21-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,28,43,.83))}
+.v21-photo figcaption{position:absolute;z-index:1;bottom:0;left:0;right:0;color:#fff;padding:34px 22px 20px;display:flex;flex-direction:column;gap:4px}
+.v21-photo figcaption small{font-size:12px;color:#e7c895;letter-spacing:.15em}
+.v21-photo figcaption strong{font-size:clamp(21px,2.5vw,30px)}
+.v21-photo figcaption span{font-size:13px;letter-spacing:.06em}
+.v21-photo:hover img,.v21-more-gallery figure:hover img{transform:scale(1.035)}
+.v21-more-head{margin:38px 0 16px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.v21-more-head h3{margin:0;color:#193653;font-size:26px}.v21-more-head p{margin:0;color:#68665e;font-size:14px}
+.v21-more-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.v21-more-gallery figure{margin:0;position:relative;aspect-ratio:4/5;overflow:hidden;background:#e4d7be}
+.v21-more-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.v21-more-gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:28px 10px 12px;color:#fff;font-size:13px;background:linear-gradient(transparent,rgba(10,28,43,.85))}
+@media(max-width:700px){.v21-practice{padding:55px 0}.v21-main-gallery{gap:12px}.v21-photo{aspect-ratio:3/4}.v21-photo figcaption{padding:25px 12px 12px}.v21-photo figcaption strong{font-size:19px}.v21-photo figcaption span{font-size:11px}.v21-more-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+@media(max-width:430px){.v21-main-gallery{grid-template-columns:1fr}.v21-photo{aspect-ratio:4/3}.v21-photo.v21-fist{aspect-ratio:3/4}}
+@media(prefers-reduced-motion:reduce){.v21-photo img,.v21-more-gallery img{transition:none}}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="wrap nav">
-    <div class="brand">
-      <div>
-        <div class="brand-name lishu">臺灣復興中華傳統武術協會</div>
-        <div class="brand-en">Traditional Chinese Martial Arts Revival Association of Taiwan</div>
-      </div>
-    </div>
-    <nav>
-      <a href="#origin">協會緣起</a>
-      <a href="heritage.html">專項武學</a>
-      <a href="#heritage">傳承脈絡</a>
-      <a href="#values">術德精神</a>
-      <a href="#gallery">活動紀錄</a>
-      <a href="#join">加入協會</a>
-    </nav>
-  </div>
+<div class="wrap nav">
+<a aria-label="返回協會首頁" class="brand" href="index.html">
+<img alt="協會正式會徽" class="brand-logo" height="60" src="images/tcma-logo.png" width="60"/>
+<div>
+<div class="brand-name lishu">臺灣復興中華傳統武術協會</div>
+<div class="brand-en">Traditional Chinese Martial Arts Revival Association of Taiwan</div>
+</div>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="開啟導覽選單" class="mobile-toggle" type="button">☰ <span>選單</span></button>
+<nav id="site-nav">
+<a href="index.html">首頁</a>
+<a href="#origin">認識協會</a>
+<a href="heritage.html">傳統武學</a>
+<a href="#courses">課程研習</a>
+<a href="#news">最新消息</a>
+<a href="#gallery">活動紀錄</a>
+<a href="#members">會員專區</a>
+<a href="#join">加入與聯絡</a>
+</nav>
+</div>
 </header>
-
 <main>
 <section class="hero">
-  <div class="fengshui-ring" aria-hidden="true"><i></i><i></i></div>
-  <div class="cloud"><span></span><span></span><span></span></div>
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <div class="eyebrow">臺灣・傳統武術・文化傳承</div>
-      <h1 class="lishu">武</h1>
-      <div class="main-motto lishu">復興傳統・術德兼修</div>
-      <p class="desc">
-        <strong>以正氣立身，以武德修心。</strong><br>
-        <strong>以基本功築基，以拳械磨藝。</strong><br>
-        讓更多人走近武術、理解武術，讓傳統在當代持續有人學、有人練、有人傳。
-      </p>
-    </div>
-    <div class="hero-mark">
-      <div class="big-wu lishu">武</div>
-      <div class="seal">術德兼修</div>
-    </div>
-  </div>
-  <div class="qi-river" aria-hidden="true">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M-30 102 C180 22 338 142 560 76 S930 18 1120 82 S1360 122 1470 45" fill="none" stroke="#183653" stroke-width="1.2"/>
-      <path d="M-20 124 C190 58 350 150 580 98 S950 42 1150 101 S1370 139 1460 75" fill="none" stroke="#c49a52" stroke-width="1"/>
-    </svg>
-  </div>
-  <div class="scroll-bar"><span class="scroll-dot"></span></div>
+<div aria-hidden="true" class="fengshui-ring"><i></i><i></i></div>
+<div class="cloud"><span></span><span></span><span></span></div>
+<div class="wrap hero-inner">
+<div class="hero-copy v23-copy">
+<div class="eyebrow">臺灣復興中華傳統武術協會</div>
+<h1 class="v23-head lishu">復興傳統<span>・</span>術德兼修</h1>
+<div class="v23-rule"></div>
+<p class="v23-lead">傳統武術，不僅是一招一式的技藝，更蘊含著師承精神、武德修養與歷代相傳的文化智慧。</p>
+<p class="v23-detail">我們致力於傳承武學、培育後學、保存文化，並透過四季會員日、社區公益與企業養生等活動，讓更多人親近傳統武術，感受習武修身的美好。</p>
+<p class="v23-tagline">讓傳統武學走入生活，讓文化傳承持續發生。</p>
+<a class="v23-cta" href="#origin">認識我們正在做的事 <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-mark">
+<img alt="臺灣復興中華傳統武術協會正式會徽" class="hero-logo" height="340" src="images/tcma-logo.png" width="340"/>
+<div class="seal">術德兼修</div>
+</div>
+</div>
+<div aria-hidden="true" class="qi-river">
+<svg preserveaspectratio="none" viewbox="0 0 1440 150">
+<path d="M-30 102 C180 22 338 142 560 76 S930 18 1120 82 S1360 122 1470 45" fill="none" stroke="#183653" stroke-width="1.2"></path>
+<path d="M-20 124 C190 58 350 150 580 98 S950 42 1150 101 S1370 139 1460 75" fill="none" stroke="#c49a52" stroke-width="1"></path>
+</svg>
+</div>
+<div class="scroll-bar"><span class="scroll-dot"></span></div>
 </section>
-
 <section id="origin">
-  <div class="wrap origin">
-    <div class="origin-art" aria-label="石鎖、木樁與傳統練功器物"></div>
-    <div class="origin-copy">
-      <div class="eyebrow">ORIGIN</div>
-      <h3 class="lishu">為何以「復興」為名</h3>
-      <p>
-        面對傳統武術技藝與武德精神逐漸式微，本會希望重新連結其文化價值與教育意義，
-        讓傳統武術不只被保存，更能在當代持續被理解、學習與實踐。
-      </p>
-      <p>
-        武術之所以值得傳承，不只因為招式與器械，更因為其中包含對身體的認識、
-        對分寸的掌握，以及對師友、群體與文化的責任。
-      </p>
-      <div class="quote lishu">傳承，不只是留下套路；更是留下方法、精神與責任。</div>
-    </div>
-  </div>
+<div class="wrap origin">
+<div aria-label="石鎖、木樁與傳統練功器物" class="origin-art"></div>
+<div class="origin-copy">
+<div class="eyebrow">ORIGIN</div>
+<h3 class="lishu">認識協會・讓傳統走進生活</h3>
+<p>傳統武術不僅是拳腳兵器之技，更蘊含師承精神、武德修養與歷代相傳的文化智慧。本會以復興傳統武學文化為宗旨，重視技藝傳承、歷史紀錄、武德教育與國際交流。</p>
+<p>我們透過四季會員日、社區公益、企業文化研習、武學培育及文化保存，邀請習武同好、文化愛好者與關心教育的各界朋友，一起認識傳統武學、參與傳承。</p>
+<div class="quote lishu">傳統武術的美好，值得讓更多人認識與體會。</div>
+</div>
+</div>
 </section>
-
-<section class="inner-cultivation" aria-labelledby="inner-title">
-  <div class="wrap">
-    <div class="inner-lead">
-      <div class="eyebrow">INNER CULTIVATION</div>
-      <h2 id="inner-title" class="verse lishu">外練其形・內養其心</h2>
-      <p>一招一式，是身體的鍛鍊；一起一落，也是心性的照見。習武所求，不在炫技，而在知進退、守分寸、明責任。</p>
-    </div>
-    <div class="inner-grid">
-      <div class="inner-item"><div class="one-char lishu">正</div><h3 class="lishu">正其身</h3><p>從站立、呼吸與步法開始，在反覆習練中建立穩定與秩序。</p></div>
-      <div class="inner-item"><div class="one-char lishu">靜</div><h3 class="lishu">定其心</h3><p>動中求靜，快中有定；不躁進，也不失去判斷與節制。</p></div>
-      <div class="inner-item"><div class="one-char lishu">承</div><h3 class="lishu">承其責</h3><p>尊重源流、珍惜所學，並以適當的方法傳給願意學習的下一代。</p></div>
-    </div>
-  </div>
+<section aria-labelledby="inner-title" class="inner-cultivation">
+<div class="wrap">
+<div class="inner-lead">
+<div class="eyebrow">INNER CULTIVATION</div>
+<h2 class="verse lishu" id="inner-title">外練其形・內養其心</h2>
+<p>一招一式，是身體的鍛鍊；一起一落，也是心性的照見。習武所求，不在炫技，而在知進退、守分寸、明責任。</p>
+</div>
+<div class="inner-grid">
+<div class="inner-item"><div class="one-char lishu">正</div><h3 class="lishu">正其身</h3><p>從站立、呼吸與步法開始，在反覆習練中建立穩定與秩序。</p></div>
+<div class="inner-item"><div class="one-char lishu">靜</div><h3 class="lishu">定其心</h3><p>動中求靜，快中有定；不躁進，也不失去判斷與節制。</p></div>
+<div class="inner-item"><div class="one-char lishu">承</div><h3 class="lishu">承其責</h3><p>尊重源流、珍惜所學，並以適當的方法傳給願意學習的下一代。</p></div>
+</div>
+</div>
 </section>
-
-
-<section class="feature-art" aria-label="武學精神與文化意象">
-  <div class="wrap">
-    <div class="feature-art-grid">
-      <figure>
-        <img src="tea-mountain.png" alt="古冊、茶席與水墨山景，呈現習武修心與文化涵養">
-        <figcaption><b class="lishu">正氣立身・武德修心</b><span>習武不只磨練技藝，也在日常中養成分寸、責任與品德。</span></figcaption>
-      </figure>
-      <figure>
-        <img src="heritage-art.jpg.png" alt="拳譜、器械與山水意象，呈現傳統武藝的實修與傳承">
-        <figcaption><b class="lishu">基本功築基・拳械磨藝</b><span>從根基、拳術到傳統器械，在反覆習練中承接方法與技藝。</span></figcaption>
-      </figure>
-    </div>
-  </div>
+<section aria-label="武學精神與文化意象" class="feature-art">
+<div class="wrap">
+<div class="feature-art-grid">
+<figure>
+<img alt="古冊、茶席與水墨山景，呈現習武修心與文化涵養" src="images/tea-mountain.png"/>
+<figcaption><b class="lishu">正氣立身・武德修心</b><span>習武不只磨練技藝，也在日常中養成分寸、責任與品德。</span></figcaption>
+</figure>
+<figure>
+<img alt="拳譜、器械與山水意象，呈現傳統武藝的實修與傳承" src="images/heritage-art.jpg"/>
+<figcaption><b class="lishu">基本功築基・拳械磨藝</b><span>從根基、拳術到傳統器械，在反覆習練中承接方法與技藝。</span></figcaption>
+</figure>
+</div>
+</div>
 </section>
-
-
-<section class="what-we-do" aria-label="協會推廣工作">
-  <div class="wrap">
-    <div class="lead">
-      <div class="eyebrow">WHAT WE DO</div>
-      <h2 class="lishu">讓傳統，真正回到生活之中</h2>
-      <p>從日常習練到公共推廣，讓傳統武術不只被保存，更能持續被理解、被實踐、被傳承。</p>
-    </div>
-    <div class="action-grid">
-      <div class="action-item">武學研習</div>
-      <div class="action-item">人才培育</div>
-      <div class="action-item">公益推廣</div>
-      <div class="action-item">文化交流</div>
-      <div class="action-item">講座研習</div>
-      <div class="action-item">技藝傳承</div>
-    </div>
-  </div>
+<section aria-label="協會推廣工作" class="what-we-do">
+<div class="wrap">
+<div class="lead">
+<div class="eyebrow">WHAT WE DO</div>
+<h2 class="lishu">讓傳統，真正回到生活之中</h2>
+<p>從日常習練到公共推廣，讓傳統武術不只被保存，更能持續被理解、被實踐、被傳承。</p>
+</div>
+<div class="action-grid">
+<div class="action-item">武學研習</div>
+<div class="action-item">人才培育</div>
+<div class="action-item">公益推廣</div>
+<div class="action-item">文化交流</div>
+<div class="action-item">講座研習</div>
+<div class="action-item">技藝傳承</div>
+</div>
+</div>
 </section>
-
-<section id="heritage" class="heritage">
-  <div class="wrap">
-    <div class="section-title">
-      <div class="en">HERITAGE PATH</div>
-      <h2 class="lishu">傳承脈絡</h2>
-      <p>從根本功法到武德文化，建立完整而可延續的學習與培育方向。</p>
-    </div>
-    <div class="path">
-      <div class="path-item">
-        <div class="path-no">01</div>
-        <div class="path-mark lishu">根</div>
-        <h3 class="lishu">根本功法</h3>
-        <p>樁、腿、步、身、勁力，重視扎實基礎與身體結構。</p>
-      </div>
-      <div class="path-item">
-        <div class="path-no">02</div>
-        <div class="path-mark lishu">拳</div>
-        <h3 class="lishu">拳術傳承</h3>
-        <p>以傳統拳術教學為核心，延續技法、身法與攻防理解。</p>
-      </div>
-      <div class="path-item">
-        <div class="path-no">03</div>
-        <div class="path-mark lishu">器</div>
-        <h3 class="lishu">兵器習練</h3>
-        <p>劍、槍、刀、棍等傳統器械，講究法度、安全與文化脈絡。</p>
-      </div>
-      <div class="path-item">
-        <div class="path-no">04</div>
-        <div class="path-mark lishu">德</div>
-        <h3 class="lishu">武德文化</h3>
-        <p>將禮儀、自律、責任與傳承意識融入日常習武。</p>
-      </div>
-    </div>
-  </div>
+<section class="initiatives v20-initiatives" id="initiatives"><div class="wrap"><div class="initiatives-head"><span class="initiatives-kicker">FIVE PILLARS · 協會五大核心工作</span><h2 class="lishu">讓武學走入生活，讓傳承成為日常</h2><p>從四季習武、企業養生，到武學培育、文化保存與社區公益，讓更多朋友看見傳統武術的文化價值與實際行動。</p></div><div class="v20-ornament" aria-hidden="true"><span>✦</span></div><div class="initiatives-grid v20-grid"><article class="initiative v20-card"><div class="v20-card-top"><span class="v20-index">01 / 協會五大核心工作</span><span class="v20-seal" aria-label="文化印記：四時">四時</span></div><div class="v20-art" aria-hidden="true"><span class="v20-art-symbol">❀</span><span class="v20-ink-hill"></span></div><div class="v20-card-body"><h3>一武一會</h3><div class="v20-subtitle">四季會員日</div><p>春習短兵、夏練基本功、秋習對練、冬養樁功。每季相聚，以武會友，在練習與交流中延續情誼。</p><span class="initiative-tag">會員專屬活動</span></div></article><article class="initiative v20-card"><div class="v20-card-top"><span class="v20-index">02 / 協會五大核心工作</span><span class="v20-seal" aria-label="文化印記：養和">養和</span></div><div class="v20-art" aria-hidden="true"><span class="v20-art-symbol">◌</span><span class="v20-ink-hill"></span></div><div class="v20-card-body"><h3>企業養生</h3><div class="v20-subtitle">東方養生文化研習</div><p>結合內家武學、靜功與東方養生文化，為企業團體規劃兼具文化深度與身心調和的研習交流。</p><span class="initiative-tag">企業團體合作洽詢</span></div></article><article class="initiative v20-card"><div class="v20-card-top"><span class="v20-index">03 / 協會五大核心工作</span><span class="v20-seal" aria-label="文化印記：薪傳">薪傳</span></div><div class="v20-art" aria-hidden="true"><span class="v20-art-symbol">✦</span><span class="v20-ink-hill"></span></div><div class="v20-card-body"><h3>武學培育</h3><div class="v20-subtitle">技藝與武德傳承</div><p>重視基本功、拳械學習、師承脈絡與武德教育，逐步推動青少年及有志習武者的培育。</p><span class="initiative-tag">武學培育計畫</span></div></article><article class="initiative v20-card"><div class="v20-card-top"><span class="v20-index">04 / 協會五大核心工作</span><span class="v20-seal" aria-label="文化印記：存真">存真</span></div><div class="v20-art" aria-hidden="true"><span class="v20-art-symbol">◇</span><span class="v20-ink-hill"></span></div><div class="v20-card-body"><h3>文化保存</h3><div class="v20-subtitle">武學紀錄與國際交流</div><p>持續整理師承故事、拳術史料與影像教材，並促進國內外傳統武學文化交流。</p><span class="initiative-tag">文化保存與交流</span></div></article><article class="initiative v20-card"><div class="v20-card-top"><span class="v20-index">05 / 協會五大核心工作</span><span class="v20-seal" aria-label="文化印記：弘武">弘武</span></div><div class="v20-art" aria-hidden="true"><span class="v20-art-symbol">✿</span><span class="v20-ink-hill"></span></div><div class="v20-card-body"><h3>社區公益</h3><div class="v20-subtitle">武學文化推廣</div><p>透過社區公益體驗、養生練習及文化分享，邀請不同年齡的朋友親近傳統武學。</p><span class="initiative-tag">公益推廣與文化體驗</span></div></article></div><div class="initiatives-cta"><div><strong>無論是想參與活動、認識武學，或洽談企業與公益合作，都歡迎來信交流。</strong><p>從一次相識開始，一起為傳統文化留下一份力量。</p></div><a href="mailto:taiwan.tcmart@gmail.com?subject=%E5%8D%94%E6%9C%83%E6%B4%BB%E5%8B%95%E8%88%87%E5%90%88%E4%BD%9C%E6%B4%BD%E8%A9%A2">聯繫協會 ↗</a></div></div></section></div></section><section class="heritage" id="heritage">
+<div class="wrap">
+<div class="section-title">
+<div class="en">HERITAGE PATH</div>
+<h2 class="lishu">傳承脈絡</h2>
+<p>從根本功法到武德文化，建立完整而可延續的學習與培育方向。</p>
+</div>
+<div class="path">
+<div class="path-item">
+<div class="path-no">01</div>
+<div class="path-mark lishu">根</div>
+<h3 class="lishu">根本功法</h3>
+<p>樁、腿、步、身、勁力，重視扎實基礎與身體結構。</p>
+</div>
+<div class="path-item">
+<div class="path-no">02</div>
+<div class="path-mark lishu">拳</div>
+<h3 class="lishu">拳術傳承</h3>
+<p>以傳統拳術教學為核心，延續技法、身法與攻防理解。</p>
+</div>
+<div class="path-item">
+<div class="path-no">03</div>
+<div class="path-mark lishu">器</div>
+<h3 class="lishu">兵器習練</h3>
+<p>劍、槍、刀、棍等傳統器械，講究法度、安全與文化脈絡。</p>
+</div>
+<div class="path-item">
+<div class="path-no">04</div>
+<div class="path-mark lishu">德</div>
+<h3 class="lishu">武德文化</h3>
+<p>將禮儀、自律、責任與傳承意識融入日常習武。</p>
+</div>
+</div>
+</div>
 </section>
-
 <section id="values">
-  <div class="wrap">
-    <div class="section-title">
-      <div class="en">OUR SPIRIT</div>
-      <h2 class="lishu">術與德，並行而修</h2>
-      <p>武術不只追求動作完成，也重視人的修養、責任與文化理解。</p>
-    </div>
-    <div class="values-grid">
-      <div class="value-card"><div class="char lishu">術</div><h3 class="lishu">技藝求真</h3><p>重視正確方法、基本功、身法與實際練習，讓傳承有所依據。</p></div>
-      <div class="value-card"><div class="char lishu">德</div><h3 class="lishu">武德修身</h3><p>以禮、自律、安全與責任作為學習的一部分，不使技術與品格分離。</p></div>
-      <div class="value-card"><div class="char lishu">傳</div><h3 class="lishu">人才培育</h3><p>由學習、見習、協助到傳承，逐步建立下一代的責任與能力。</p></div>
-      <div class="value-card"><div class="char lishu">文</div><h3 class="lishu">文化延續</h3><p>透過講座、紀錄、交流及公益推廣，讓傳統武術在社會中持續發聲。</p></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="section-title">
+<div class="en">OUR SPIRIT</div>
+<h2 class="lishu">術與德，並行而修</h2>
+<p>武術不只追求動作完成，也重視人的修養、責任與文化理解。</p>
+</div>
+<div class="values-grid">
+<div class="value-card"><div class="char lishu">術</div><h3 class="lishu">技藝求真</h3><p>重視正確方法、基本功、身法與實際練習，讓傳承有所依據。</p></div>
+<div class="value-card"><div class="char lishu">德</div><h3 class="lishu">武德修身</h3><p>以禮、自律、安全與責任作為學習的一部分，不使技術與品格分離。</p></div>
+<div class="value-card"><div class="char lishu">傳</div><h3 class="lishu">人才培育</h3><p>由學習、見習、協助到傳承，逐步建立下一代的責任與能力。</p></div>
+<div class="value-card"><div class="char lishu">文</div><h3 class="lishu">文化延續</h3><p>透過講座、紀錄、交流及公益推廣，讓傳統武術在社會中持續發聲。</p></div>
+</div>
+</div>
 </section>
-
-<section id="gallery" class="gallery-wrap">
-  <div class="wrap">
-    <div class="section-title">
-      <div class="en">RECORDS</div>
-      <h2 class="lishu">武學內蘊</h2>
-      <p>形於外，而意存於內；以仿古圖譜呈現拳、器與傳承之間的精神脈絡。</p>
-    </div>
-    <div class="gallery">
-      <figure><img src="manual-fist.jpg" alt="仿古拳術圖譜"><figcaption><b class="lishu">拳法之本</b>根於足，發於腿，主宰於腰</figcaption></figure>
-      <figure><img src="manual-weapons.jpg" alt="仿古槍劍圖譜"><figcaption><b class="lishu">器械之道</b>手中有器，心中更須有度</figcaption></figure>
-      <figure><img src="manual-heritage.jpg" alt="武學古卷與器械意象"><figcaption><b class="lishu">術德相承</b>所傳是技，所承是心</figcaption></figure>
-    </div>
-  </div>
+<section class="gallery-wrap" id="gallery">
+<div class="wrap">
+<div class="section-title">
+<div class="en">RECORDS</div>
+<h2 class="lishu">武學內蘊</h2>
+<p>形於外，而意存於內；以拳術修身，以兵器磨藝，承續傳統武學之精神與技藝。</p>
+</div>
+<div class="gallery">
+<figure><img alt="拳術文化意象插畫" src="images/manual-fist.jpg"/><figcaption><b class="lishu">拳法之本</b>根於足，發於腿，主宰於腰</figcaption></figure>
+<figure><img alt="兵器文化意象插畫" src="images/manual-weapons.jpg"/><figcaption><b class="lishu">器械之道</b>手中有器，心中更須有度</figcaption></figure>
+<figure><img alt="武學古卷與器械意象" src="images/manual-heritage.jpg"/><figcaption><b class="lishu">術德相承</b>所傳是技，所承是心</figcaption></figure>
+</div>
+</div>
 </section>
-
-
-<section id="join" class="join">
-  <div class="wrap">
-    <div class="join-inner">
-      <div class="eyebrow">JOIN THE ASSOCIATION</div>
-      <h2 class="lishu">聯繫我們</h2>
-      <p>
+<section aria-labelledby="practice-title" class="practice-photos v21-practice" id="practice-photos">
+<div class="wrap"><div class="eyebrow">MARTIAL ARTS IN PRACTICE · 四藝精選</div>
+<h2 class="lishu" id="practice-title">武藝風采・拳械並修</h2>
+<p class="intro">一拳一式見根基，一刀一劍見功夫。從徒手拳術到傳統兵器，在日常演練中體會身法、勁力與傳統武學的深厚內涵。</p>
+<div class="v21-main-gallery">
+<figure class="v21-photo v21-fist"><img src="images/martial-fist-v21.webp" alt="戶外樹林間單腿獨立演練拳術" loading="lazy"><figcaption><small>壹 · 拳術</small><strong class="lishu">拳術・身法與根基</strong><span>拳架、步法與基本功</span></figcaption></figure>
+<figure class="v21-photo"><img src="images/martial-photo-01.webp" alt="草地上弓步伸劍演練" loading="lazy"><figcaption><small>貳 · 劍術</small><strong class="lishu">劍術・剛柔相濟</strong><span>身韻、虛實與進退</span></figcaption></figure>
+<figure class="v21-photo"><img src="images/martial-photo-04.webp" alt="田野間低身演練刀術" loading="lazy"><figcaption><small>參 · 刀術</small><strong class="lishu">刀術・身械協調</strong><span>刀法、步法與勁力</span></figcaption></figure>
+<figure class="v21-photo"><img src="images/martial-whipstaff-v21.webp" alt="岩壁前單腿獨立演練傳統鞭桿" loading="lazy"><figcaption><small>肆 · 鞭桿</small><strong class="lishu">鞭桿・靈活多變</strong><span>長短運用與身法配合</span></figcaption></figure>
+</div>
+</div></section>
+<section aria-labelledby="registration-title" class="registration" id="registration">
+<div class="wrap"><div class="registration-panel">
+<div>
+<div class="eyebrow">OFFICIAL REGISTRATION</div>
+<h2 class="lishu" id="registration-title">內政部正式立案</h2>
+<p>本會為依法完成立案之全國性人民團體，致力於中華傳統武術之研究、教學、文化傳承與公益推廣。</p>
+<dl>
+<dt>團體名稱</dt><dd>臺灣復興中華傳統武術協會</dd>
+<dt>主管機關</dt><dd>內政部</dd>
+<dt>立案字號</dt><dd>台內團字第1150035686號</dd>
+<dt>成立日期</dt><dd>民國115年8月23日</dd>
+<dt>團體性質</dt><dd>全國性人民團體</dd>
+</dl>
+</div>
+</div></div>
+</section>
+<section aria-labelledby="news-title" class="v16-section" id="news"><div class="wrap">
+<div class="eyebrow">LATEST NEWS</div><h2 class="lishu" id="news-title">最新消息</h2>
+<p class="v16-lead">協會公告、研習課程與活動資訊將陸續於此更新。歡迎會員及各界朋友持續關注。</p>
+<div class="v16-cards"><article class="v16-card"><span>協會公告</span><h3>內政部正式立案</h3><p>本會已依法完成全國性人民團體立案，持續推動傳統武術教育與文化傳承。</p><a href="#registration">查看立案資訊 →</a></article><article class="v16-card"><span>課程資訊</span><h3>傳統武學研習</h3><p>規劃基礎體驗、拳械研習及進階精修課程；開課時間與報名辦法以正式公告為準。</p><a href="#courses">了解課程方向 →</a></article><article class="v16-card"><span>活動資訊</span><h3>協會活動與交流</h3><p>透過會員交流、公益體驗及文化活動，讓傳統武術在當代持續傳習。</p><a href="#gallery">瀏覽活動紀錄 →</a></article></div></div></section>
+<section aria-labelledby="courses-title" class="v16-section v16-alt" id="courses"><div class="wrap"><div class="eyebrow">MARTIAL ARTS &amp; CULTURAL ACTIVITIES</div><h2 class="lishu" id="courses-title">武學研習與文化活動</h2><p class="v16-lead">以文化傳承、會員交流與公益推廣為核心，依活動性質規劃適合的研習與體驗；日期、資格及費用以個別公告為準。</p><div class="v16-cards"><article class="v16-card"><span>入門</span><h3>基礎體驗</h3><p>傳統武術基本功、身法與文化入門，適合初學者了解習武之道。</p></article><article class="v16-card"><span>研習</span><h3>拳術與兵器</h3><p>長拳、螳螂拳、內家拳與傳統兵器的分級研習。</p></article><article class="v16-card"><span>進階</span><h3>精修與傳承</h3><p>依習武基礎及課程要求進行評估，著重功法、拳械與對練。</p></article></div><p class="v16-note">有意參與課程者，請先來信洽詢：<a href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a></p></div></section>
+<section aria-labelledby="members-title" class="v16-section" id="members"><div class="wrap"><div class="eyebrow">MEMBER INFORMATION</div><h2 class="lishu" id="members-title">會員專區</h2><p class="v16-lead">提供會員交流、研習活動與協會公告入口。會員限定教材與個人資料暫不公開上網。</p><div class="v16-cards"><article class="v16-card"><h3>會員活動</h3><p>會員日、武學交流與共同研習資訊，依協會正式公告辦理。</p></article><article class="v16-card"><h3>學習資源</h3><p>未來逐步規劃教材與教學影片；涉及會員權限的內容另採適當管理方式。</p></article><article class="v16-card"><h3>加入協會</h3><p>歡迎認同傳統武術文化推廣與傳承理念的朋友洽詢入會。</p><a href="#join">聯絡協會 →</a></article></div></div></section>
+<section class="join" id="join">
+<div class="wrap">
+<div class="join-inner">
+<div class="eyebrow">JOIN THE ASSOCIATION</div>
+<h2 class="lishu">聯繫我們</h2>
+<p>
         歡迎認同本會宗旨、關心中華傳統武術文化與教育傳承之個人、學生、團體及各界朋友與我們聯繫。
       </p>
-      <a class="button" href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a>
-    </div>
-  </div>
+<a class="button" href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a>
+</div>
+</div>
 </section>
 </main>
-
 <footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <b>臺灣復興中華傳統武術協會</b><br>
-        Traditional Chinese Martial Arts Revival Association of Taiwan<br><br>
-        Email：<a href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a><br>
-        電話：<a href="tel:0921905212">0921-905-212</a><br>
-        會址：臺北市文山區興隆路2段220巷31弄3號2樓<br>
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<b>臺灣復興中華傳統武術協會</b><br/>
+        Traditional Chinese Martial Arts Revival Association of Taiwan<br/><br/>
+        內政部立案字號：台內團字第1150035686號<br/>
+        Email：<a href="mailto:taiwan.tcmart@gmail.com">taiwan.tcmart@gmail.com</a><br/>
+        電話：<a href="tel:0921905212">0921-905-212</a><br/>
         如有入會、活動、文化交流或合作相關需求，歡迎來信洽詢。
       </div>
-      <div class="footer-motto">復興傳統・術德兼修</div>
-    </div>
-    <div class="copy">© 2026 臺灣復興中華傳統武術協會 All Rights Reserved.</div>
-  </div>
+<div class="footer-motto">復興傳統・術德兼修</div>
+</div>
+<div class="copy">© 2026 臺灣復興中華傳統武術協會 All Rights Reserved.</div>
+</div>
 </footer>
+<script>
+(function(){
+ const button=document.querySelector('.mobile-toggle');
+ const nav=document.getElementById('site-nav');
+ if(!button||!nav)return;
+ function close(){nav.classList.remove('is-open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','開啟導覽選單');}
+ button.addEventListener('click',function(){const open=nav.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'關閉導覽選單':'開啟導覽選單');});
+ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+})();
+</script>
+<a aria-label="返回協會首頁" class="home-shortcut" href="index.html">⌂ 返回首頁</a>
 </body>
 </html>
