@@ -852,5 +852,22 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
   if(location.hash && document.querySelector(location.hash))showFull();
 })();
 </script>
+<script>
+/* V24.2: remove accidentally rendered literal backslash-n text nodes. */
+(function(){
+  function cleanEscapedNewlines(){
+    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+    const nodes=[];
+    while(walker.nextNode()){
+      const node=walker.currentNode;
+      if(node.parentElement && /^(SCRIPT|STYLE|TEXTAREA|PRE|CODE)$/.test(node.parentElement.tagName))continue;
+      if(node.nodeValue && /\\n/.test(node.nodeValue) && !node.nodeValue.replace(/\\n/g,'').trim())nodes.push(node);
+    }
+    nodes.forEach(node=>node.remove());
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',cleanEscapedNewlines);
+  else cleanEscapedNewlines();
+})();
+</script>
 </body>
 </html>
