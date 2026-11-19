@@ -451,6 +451,53 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
 @media(max-width:430px){.v21-main-gallery{grid-template-columns:1fr}.v21-photo{aspect-ratio:4/3}.v21-photo.v21-fist{aspect-ratio:3/4}}
 @media(prefers-reduced-motion:reduce){.v21-photo img,.v21-more-gallery img{transition:none}}
 </style>
+<style>
+/* V24: only small screens are changed. Desktop V23 rules remain intact. */
+.v24-mobile{display:none}
+@media(max-width:767px){
+  body:not(.v24-full) main>section:not(.v24-mobile){display:none!important}
+  .v24-mobile{display:block!important;padding:0;background:#faf5e9;color:#263e4f}
+  .v24-mobile *{box-sizing:border-box}
+  .v24-intro{text-align:center;padding:25px 19px 29px;background:linear-gradient(#fbf7ee,#f3e8d4)}
+  .v24-emblem{width:94px;height:94px;object-fit:contain;display:block;margin:0 auto 10px}
+  .v24-eyebrow{font-size:12px;color:#86683f;letter-spacing:.07em}
+  .v24-intro h1{font-size:clamp(25px,7vw,32px);line-height:1.45;margin:7px 0 10px;color:#183653}
+  .v24-rule{width:54px;height:2px;background:#bc985e;margin:12px auto}
+  .v24-quote{font-size:16px;line-height:1.85;color:#423f39;margin:8px 0}
+  .v24-invite{font-size:13px;line-height:1.8;color:#736858;margin:8px auto;max-width:340px}
+  .v24-more{max-width:350px;margin:12px auto 0;font-size:13px;color:#615b53}
+  .v24-more summary{cursor:pointer;list-style:none;display:inline-block;border:1px solid #c9ac7b;border-radius:30px;padding:4px 18px;color:#795d38}
+  .v24-more summary::-webkit-details-marker{display:none}
+  .v24-more p{text-align:left;line-height:1.85}
+  .v24-block{padding:27px 18px 23px!important}
+  .v24-kicker{font-size:10px;letter-spacing:.17em;color:#a17a45;font-weight:700}
+  .v24-block h2,.v24-contact h2{font-size:26px;color:#183653;margin:3px 0 13px;line-height:1.4}
+  .v24-pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .v24-pillar{appearance:none;text-align:left;cursor:pointer;border:1px solid #e0d1b6;background:#fffdf8;padding:12px 13px;border-radius:8px;min-height:74px}
+  .v24-pillar.selected{background:#eadbbd;border-color:#b99257}
+  .v24-pillar small{display:block;font-size:11px;color:#96764e;line-height:1.4}
+  .v24-pillar strong{display:block;font-size:17px;color:#183653;margin-top:5px}
+  .v24-pillar-detail{background:#f0e6d4;padding:13px 15px;border-radius:7px;margin-top:10px;font-size:13px;line-height:1.85;color:#575149;min-height:65px}
+  .v24-photos{background:#f4ebdc}
+  .v24-hint{font-size:12px;color:#786b57;margin:-8px 0 11px}
+  .v24-track{display:flex;gap:11px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:0 0 10px;overscroll-behavior-inline:contain}
+  .v24-track figure{flex:0 0 77%;margin:0;position:relative;scroll-snap-align:start;height:255px;border-radius:9px;overflow:hidden;background:#d9ccb5}
+  .v24-track img{width:100%;height:100%;object-fit:cover;display:block}
+  .v24-track figcaption{position:absolute;bottom:0;left:0;right:0;padding:22px 13px 11px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:white;font-size:16px}
+  .v24-links{background:#faf5e9}
+  .v24-expand-link{display:flex;justify-content:space-between;align-items:center;padding:13px 3px;border-bottom:1px solid #dfd1b7;font-size:15px;color:#183653}
+  .v24-expand-link span{font-size:12px;color:#9c7545}
+  .v24-contact{text-align:center;background:#eee2cd;padding:26px 18px 30px}
+  .v24-contact p{font-size:13px;color:#635b50;line-height:1.8}
+  .v24-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:15px 0}
+  .v24-actions a{border:1px solid #a58250;border-radius:5px;padding:9px 4px;font-size:14px;color:#183653;text-align:center;display:block}
+  .v24-actions .v24-primary{background:#183653;color:#fff8e8;border-color:#183653}
+  .v24-full-button{display:inline-block;margin-top:8px;font-size:12px;color:#7d603d;text-decoration:underline}
+  body.v24-full .v24-mobile{display:none!important}
+  body.v24-full main>section{display:revert}
+  body.v24-full main>section.hero{display:block}
+}
+</style>
 </head>
 <body>
 <header>
@@ -475,7 +522,52 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
 </nav>
 </div>
 </header>
-<main>
+<main>\n<section class="v24-mobile" aria-label="手機版首頁">
+<div class="v24-intro">
+  <img class="v24-emblem" src="images/tcma-logo.png" alt="臺灣復興中華傳統武術協會正式會徽" width="112" height="112">
+  <div class="v24-eyebrow">臺灣復興中華傳統武術協會</div>
+  <h1 class="lishu">復興傳統・術德兼修</h1>
+  <div class="v24-rule"></div>
+  <p class="v24-quote">承續武學薪火，弘揚武德精神，<br>讓傳統文化在當代生生不息。</p>
+  <p class="v24-invite">以武會友，以德修身，邀請更多朋友一同認識傳統武學之美。</p>
+  <details class="v24-more"><summary>閱讀協會理念</summary><p>傳統武術不僅是一招一式的技藝，更蘊含師承精神、武德修養與歷代相傳的文化智慧。本會致力於技藝傳承、武德教育、文化保存與國際交流。</p></details>
+</div>
+<div class="v24-block">
+  <div class="v24-kicker">OUR MISSION</div>
+  <h2 class="lishu">協會五大核心工作</h2>
+  <div class="v24-pillars">
+    <button class="v24-pillar selected" type="button" data-pillar="0"><small>01 · 四季會員日</small><strong>一武一會</strong></button>
+    <button class="v24-pillar" type="button" data-pillar="1"><small>02 · 東方養生</small><strong>企業養生</strong></button>
+    <button class="v24-pillar" type="button" data-pillar="2"><small>03 · 薪傳後學</small><strong>武學培育</strong></button>
+    <button class="v24-pillar" type="button" data-pillar="3"><small>04 · 典藏紀錄</small><strong>文化保存</strong></button>
+    <button class="v24-pillar" type="button" data-pillar="4"><small>05 · 以武會友</small><strong>社區公益</strong></button>
+  </div>
+  <div class="v24-pillar-detail" aria-live="polite">春習短兵、夏練基本功、秋習對練、冬養樁功。每季相聚，在練習與交流中延續情誼。</div>
+</div>
+<div class="v24-block v24-photos">
+  <div class="v24-kicker">MARTIAL ARTS</div><h2 class="lishu">武藝風采</h2>
+  <p class="v24-hint">左右滑動，欣賞拳、刀、劍與鞭桿</p>
+  <div class="v24-track" aria-label="武藝照片集">
+    <figure><img src="images/martial-fist-v21.webp" alt="拳術練習" loading="lazy"><figcaption>拳術・身法與根基</figcaption></figure>
+    <figure><img src="images/martial-photo-04.webp" alt="刀術練習" loading="lazy"><figcaption>刀術・身械協調</figcaption></figure>
+    <figure><img src="images/martial-photo-01.webp" alt="劍術練習" loading="lazy"><figcaption>劍術・剛柔相濟</figcaption></figure>
+    <figure><img src="images/martial-whipstaff-v21.webp" alt="鞭桿練習" loading="lazy"><figcaption>鞭桿・靈活多變</figcaption></figure>
+  </div>
+</div>
+<div class="v24-block v24-links">
+  <div class="v24-kicker">EXPLORE</div><h2 class="lishu">最新消息與活動</h2>
+  <a class="v24-expand-link" href="#news">最新消息 <span>查看公告 ↗</span></a>
+  <a class="v24-expand-link" href="#courses">武學研習與文化活動 <span>了解課程 ↗</span></a>
+  <a class="v24-expand-link" href="#gallery">活動紀錄 <span>更多紀錄 ↗</span></a>
+</div>
+<div class="v24-contact">
+  <h2 class="lishu">認識協會・加入我們</h2>
+  <p>歡迎關心傳統武學、文化傳承與公益推廣的朋友，一起參與交流。</p>
+  <div class="v24-actions"><a class="v24-primary v24-expand-link" href="#join">了解入會</a><a href="mailto:taiwan.tcmart@gmail.com">聯絡協會</a></div>
+  <a class="v24-full-button" href="#origin" id="v24-full">展開完整網站內容 ↓</a>
+</div>
+</section>
+
 <section class="hero">
 <div aria-hidden="true" class="fengshui-ring"><i></i><i></i></div>
 <div class="cloud"><span></span><span></span><span></span></div>
@@ -697,5 +789,27 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
 })();
 </script>
 <a aria-label="返回協會首頁" class="home-shortcut" href="index.html">⌂ 返回首頁</a>
+<script>
+(function(){
+  if(!window.matchMedia('(max-width:767px)').matches)return;
+  const descriptions=[
+    '春習短兵、夏練基本功、秋習對練、冬養樁功。每季相聚，在練習與交流中延續情誼。',
+    '結合內家武學、靜功與東方養生文化，為企業團體規劃兼具文化深度的研習交流。',
+    '重視基本功、拳械學習、師承脈絡與武德教育，逐步推動後學培育。',
+    '整理師承故事、拳術史料與影像教材，促進傳統武學文化保存及國際交流。',
+    '透過社區公益體驗、養生練習與文化分享，邀請不同年齡的朋友親近傳統武學。'
+  ];
+  const buttons=[...document.querySelectorAll('.v24-pillar')];
+  const detail=document.querySelector('.v24-pillar-detail');
+  buttons.forEach(b=>b.addEventListener('click',()=>{
+    buttons.forEach(x=>x.classList.toggle('selected',x===b));
+    detail.textContent=descriptions[Number(b.dataset.pillar)];
+  }));
+  function showFull(){document.body.classList.add('v24-full')}
+  document.querySelectorAll('.v24-expand-link,#v24-full').forEach(a=>a.addEventListener('click',showFull));
+  document.querySelectorAll('#site-nav a[href^="#"]').forEach(a=>a.addEventListener('click',showFull));
+  if(location.hash && document.querySelector(location.hash))showFull();
+})();
+</script>
 </body>
 </html>
