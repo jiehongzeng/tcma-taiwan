@@ -152,7 +152,41 @@ section[id]{scroll-margin-top:96px}
 .home-shortcut:hover,.home-shortcut:focus-visible{background:#8d3b30;color:#fff!important}
 @media(min-width:881px){.home-shortcut{right:25px;bottom:24px}}
 </style>
-<style id="v16-heritage-mobile">.heritage-menu{display:none;border:1px solid #c49a52;background:#fbf7ee;color:#183653;border-radius:7px;padding:9px 12px;cursor:pointer;font-size:16px}@media(max-width:880px){.heritage-menu{display:block;margin-left:auto}.nav{position:relative;flex-wrap:wrap}.links{display:none!important;position:absolute;top:100%;left:0;right:0;background:#fbf7ee;z-index:100;box-shadow:0 10px 20px #10273d22;padding:12px 18px;flex-direction:column;gap:0}.links.is-open{display:flex!important}.links a{display:block;padding:12px;border-bottom:1px solid #d9c9a8}}</style></head>
+<style id="v16-heritage-mobile">.heritage-menu{display:none;border:1px solid #c49a52;background:#fbf7ee;color:#183653;border-radius:7px;padding:9px 12px;cursor:pointer;font-size:16px}@media(max-width:880px){.heritage-menu{display:block;margin-left:auto}.nav{position:relative;flex-wrap:wrap}.links{display:none!important;position:absolute;top:100%;left:0;right:0;background:#fbf7ee;z-index:100;box-shadow:0 10px 20px #10273d22;padding:12px 18px;flex-direction:column;gap:0}.links.is-open{display:flex!important}.links a{display:block;padding:12px;border-bottom:1px solid #d9c9a8}}</style>
+<style id="v24-1-heritage-mobile-reading">
+/* Mobile-only typography and content layout. Desktop remains untouched. */
+@media (max-width:767px){
+  body{font-size:16px;line-height:1.85;letter-spacing:.015em;overflow-wrap:anywhere}
+  .wrap{width:auto!important;max-width:none!important;margin-left:18px!important;margin-right:18px!important}
+  header .wrap{margin-left:12px!important;margin-right:12px!important}
+  .hero{padding:32px 0 35px!important}
+  .hero h1{font-size:clamp(30px,8vw,39px)!important;line-height:1.35;margin:7px 0!important}
+  .hero .hero-line{font-size:16px!important;margin:5px 0 12px!important}
+  .hero p:not(.hero-line){font-size:15px!important;line-height:1.85!important;margin:8px 0 0!important}
+  section.section{padding:32px 0!important}
+  .section-head{margin-bottom:10px!important}
+  .section h2{font-size:27px!important;line-height:1.45!important;margin:2px 0 12px!important}
+  .section p{font-size:16px!important;line-height:1.95!important;margin:0 0 9px!important}
+  .cards.boxing-cards{display:grid!important;grid-template-columns:1fr!important;gap:13px!important}
+  .boxing-card{min-height:0!important;box-shadow:none!important;border-radius:9px!important;overflow:hidden!important}
+  .boxing-card::before{background-image:linear-gradient(90deg,rgba(255,253,248,.97) 0%,rgba(255,253,248,.94) 54%,rgba(255,253,248,.66) 100%),var(--card-bg)!important;background-size:cover!important;background-position:center!important}
+  .boxing-card .card-copy{width:100%!important;padding:19px 19px 20px!important}
+  .boxing-card h3{font-size:22px!important;margin:0 0 10px!important;line-height:1.4!important}
+  .boxing-card h3::after{margin-top:8px!important;height:2px!important}
+  .boxing-card p{font-size:15px!important;line-height:1.9!important;max-width:none!important;margin:0!important}
+  .boxing-card .thought{display:inline!important;width:auto!important;white-space:normal!important}
+  .boxing-card .thought+.thought::before{content:" "}
+  .two{display:grid!important;grid-template-columns:1fr!important;gap:16px!important}
+  .two img{width:100%!important;height:auto!important;max-height:270px!important;object-fit:cover!important;border-radius:7px!important}
+  blockquote{font-size:17px!important;line-height:1.85!important;margin:12px 0!important;padding:13px 15px!important}
+  .v24-heritage-toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:17px 0 0}
+  .v24-heritage-toc a{display:block;padding:10px 7px;border:1px solid #d9c9a8;border-radius:7px;background:#fffaf0;text-align:center;color:#183653;font-size:14px;font-weight:600;text-decoration:none}
+  section[id]{scroll-margin-top:80px!important}
+  .home-shortcut{font-size:12px!important;padding:8px 11px!important}
+}
+@media(min-width:768px){.v24-heritage-toc{display:none}}
+</style>
+</head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="index.html"><img class="brand-logo" src="images/tcma-logo.png" alt="協會正式會徽" width="52" height="52"><span><b class="lishu">臺灣復興中華傳統武術協會</b><small>Traditional Chinese Martial Arts Revival Association of Taiwan</small></span></a><button class="heritage-menu" type="button" aria-controls="heritage-nav" aria-expanded="false" aria-label="開啟導覽選單">☰ 選單</button><nav class="links" id="heritage-nav">
 <a href="index.html">回到首頁</a>
@@ -170,6 +204,8 @@ section[id]{scroll-margin-top:96px}
       <p>傳統武術的傳承，始於扎實的基本功，也落實於拳術、器械與攻防方法的反覆習練。本會重視方法的傳承，也重視習武過程中的品德、責任與修養。</p>
     </div>
   </section>
+
+  <nav class="v24-heritage-toc wrap" aria-label="專項武學快速導覽"><a href="#foundation">基本功</a><a href="#boxing">拳術研習</a><a href="#weapons">傳統器械</a><a href="#virtue">武德與實踐</a></nav>
 
   <section id="foundation" class="section"><div class="wrap"><div class="section-head"><div class="eyebrow">FOUNDATION</div>
         <h2 class="lishu">基本功</h2>

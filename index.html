@@ -498,6 +498,31 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
   body.v24-full main>section.hero{display:block}
 }
 </style>
+<style>
+@media(max-width:767px){
+ .v24-seasons{margin:0;padding:27px 16px 25px;background:#f0e4ce;text-align:center;border-top:1px solid #d8c29e;border-bottom:1px solid #d8c29e}
+ .v24-seasons h2{font-size:clamp(24px,7vw,30px);color:#19364c;margin:5px 0 8px;line-height:1.4}
+ .v24-seasons-tagline{font-size:13px;color:#685844;margin:0 0 16px;line-height:1.7}
+ .v24-season-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+ .v24-season{background:#faf4e8;border:1px solid #d7c3a1;border-radius:7px;padding:11px 2px;min-width:0}
+ .v24-season strong,.v24-season span,.v24-season small{display:block}
+ .v24-season strong{color:#995936;font-size:20px;line-height:1.3}
+ .v24-season span{font-size:11px;font-weight:700;color:#19364c;line-height:1.5;margin:7px 0}
+ .v24-season small{font-size:10px;color:#806c52}
+ .v24-seasons-description{font-size:13px;color:#574e43;line-height:1.8;text-align:left;margin:14px 2px}
+ .v24-season-time{font-size:14px;color:#19364c;font-weight:700}
+ .v24-season-note{font-size:11px;color:#766650;margin:5px 0 12px}
+ .v24-season-cta{display:flex!important;justify-content:center!important;gap:10px;background:#19364c;color:#fff!important;border-radius:5px;border:0!important;padding:11px 9px!important;font-size:13px!important}
+ .v24-season-cta span{color:#f2dfbb!important;font-size:11px!important}
+ body:not(.v24-full) main>section:not(.v24-mobile){display:none!important}
+ body:not(.v24-full) .home-shortcut{display:none!important}
+ .v24-mobile{display:block!important}
+ .v24-intro{padding-top:16px!important;padding-bottom:20px!important}
+ .v24-emblem{width:76px!important;height:76px!important}
+ .v24-intro h1{font-size:clamp(23px,6.5vw,29px)!important}
+ .v24-eyebrow{display:none}
+}
+</style>
 </head>
 <body>
 <header>
@@ -522,7 +547,8 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
 </nav>
 </div>
 </header>
-<main>\n<section class="v24-mobile" aria-label="手機版首頁">
+<main>
+<section class="v24-mobile" aria-label="手機版首頁">
 <div class="v24-intro">
   <img class="v24-emblem" src="images/tcma-logo.png" alt="臺灣復興中華傳統武術協會正式會徽" width="112" height="112">
   <div class="v24-eyebrow">臺灣復興中華傳統武術協會</div>
@@ -532,6 +558,21 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
   <p class="v24-invite">以武會友，以德修身，邀請更多朋友一同認識傳統武學之美。</p>
   <details class="v24-more"><summary>閱讀協會理念</summary><p>傳統武術不僅是一招一式的技藝，更蘊含師承精神、武德修養與歷代相傳的文化智慧。本會致力於技藝傳承、武德教育、文化保存與國際交流。</p></details>
 </div>
+<section class="v24-seasons" aria-labelledby="v24-seasons-title">
+ <div class="v24-kicker">SEASONAL MEMBER PRACTICE · 四季會員日</div>
+ <h2 id="v24-seasons-title" class="lishu">一武一會・四季習武</h2>
+ <p class="v24-seasons-tagline">順應四時，以武會友；習藝修德，薪火相傳。</p>
+ <div class="v24-season-grid">
+  <div class="v24-season"><strong>春生</strong><span>短兵啟藝</span><small>萌發・啟習</small></div>
+  <div class="v24-season"><strong>夏練</strong><span>基本功築基</span><small>勤修・扎根</small></div>
+  <div class="v24-season"><strong>秋習</strong><span>對練精進</span><small>切磋・印證</small></div>
+  <div class="v24-season"><strong>冬藏</strong><span>站樁養功</span><small>沉靜・蓄養</small></div>
+ </div>
+ <p class="v24-seasons-description">以四季為序，讓會員在習武、切磋與交流中精進技藝、涵養武德，延續傳統武學薪火。</p>
+ <div class="v24-season-time">每季第二個星期日 · 09:30–11:30</div>
+ <p class="v24-season-note">會員交流研習｜實際日期、時間及地點依當季公告為準</p>
+ <a class="v24-season-cta v24-expand-link" href="#initiatives">認識四季會員日 <span>查看完整介紹 ↗</span></a>
+</section>
 <div class="v24-block">
   <div class="v24-kicker">OUR MISSION</div>
   <h2 class="lishu">協會五大核心工作</h2>
@@ -542,7 +583,7 @@ html{scroll-padding-top:90px}img{max-width:100%;height:auto} .gallery img,.featu
     <button class="v24-pillar" type="button" data-pillar="3"><small>04 · 典藏紀錄</small><strong>文化保存</strong></button>
     <button class="v24-pillar" type="button" data-pillar="4"><small>05 · 以武會友</small><strong>社區公益</strong></button>
   </div>
-  <div class="v24-pillar-detail" aria-live="polite">春習短兵、夏練基本功、秋習對練、冬養樁功。每季相聚，在練習與交流中延續情誼。</div>
+  <div class="v24-pillar-detail" aria-live="polite">春生・短兵啟藝；夏練・基本功築基；秋習・對練精進；冬藏・站樁養功。每季相聚，以武會友。</div>
 </div>
 <div class="v24-block v24-photos">
   <div class="v24-kicker">MARTIAL ARTS</div><h2 class="lishu">武藝風采</h2>
